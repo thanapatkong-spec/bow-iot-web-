@@ -31664,22 +31664,25 @@ case 2:q=d.b
 if(q!==200)throw A.j(A.cv("assignSession failed: "+q))
 return A.v(null,r)}})
 return A.w($async$acC,r)},
-acI(a,b){var s=0,r=A.x(t.b5),q,p,o,n,m
+acI(a,b){var s=0,r=A.x(t.b5),q,p,o,n,m,l
 var $async$acI=A.y(function(c,d){if(c===1)return A.u(d,r)
 for(;;)switch(s){case 0:s=3
 return A.r(A.eD(A.br((B.c.dg(u.t,"/api/cat")?B.c.a_(u.t,0,54):u.t)+"/owner/api/cats/"+a+"/hydration-history?days="+b,0,null)),$async$acI)
-case 3:m=d
-if(m.b!==200){q=A.b([],t.d)
+case 3:l=d
+if(l.b!==200){q=A.b([],t.d)
 s=1
-break}p=B.K.dG(A.dx(A.dw(m.e)).cn(m.w),null)
-o=J.I(p,"history")
-if(o==null)o=p
-if(!t.j.b(o)){q=A.b([],t.d)
+break}p=B.K.dG(A.dx(A.dw(l.e)).cn(l.w),null)
+o=t.j
+if(o.b(p))n=p
+else if(t.f.b(p)){m=p.h(0,"history")
+if(m==null)m=p
+n=m}else n=null
+if(!o.b(n)){q=A.b([],t.d)
 s=1
-break}n=J.p1(o,t.f)
-n=A.ig(n,new A.acJ(),n.$ti.i("C.E"),t.P)
-n=A.O(n,A.l(n).i("C.E"))
-q=n
+break}o=J.p1(n,t.f)
+o=A.ig(o,new A.acJ(),o.$ti.i("C.E"),t.P)
+o=A.O(o,A.l(o).i("C.E"))
+q=o
 s=1
 break
 case 1:return A.v(q,r)}})
