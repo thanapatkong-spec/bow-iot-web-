@@ -33,6 +33,12 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <script>
+    if (!localStorage.getItem('flutter.bow_ownerId')) {
+      localStorage.setItem('flutter.bow_ownerId', '2');
+      localStorage.setItem('flutter.bow_token', '"local-session"');
+    }
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
